@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA_QUERY // v1.0</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入赛博朋克风格字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+  <body class="dark-mode">
+    <!-- 默认开启暗黑模式 -->
+
+    <button id="theme-toggle" title="切换显示模式">SYS</button>
+
+    <main class="content-wrapper">
+      <div class="search-box">
+        <!-- 使用 ::before 伪元素来创建命令行提示符效果 -->
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="INPUT SEARCH QUERY..."
+          autofocus
+          autocomplete="off"
+        >
+      </div>
+
+      <div id="search-stats" class="search-stats">
+        <!-- 搜索统计信息 -->
+      </div>
+
+      <div id="resultsContainer">
+        <!-- 搜索结果 -->
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
