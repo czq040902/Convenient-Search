@@ -2,7 +2,13 @@
   {
     "name": "Deno 官网",
     "url": "https://docs.deno.com/runtime/fundamentals/http_server/",
-    "tags": ["deno", "runtime", "javascript", "后端", "official"]
+    "tags": [
+      "deno",
+      "runtime",
+      "javascript",
+      "后端",
+      "official"
+    ]
   },
   {
     "name": "MDN Web Docs",
@@ -21,22 +27,53 @@
   {
     "name": "React 官网",
     "url": "https://react.dev/",
-    "tags": ["react", "frontend", "ui", "library", "javascript", "前端", "框架"]
+    "tags": [
+      "react",
+      "frontend",
+      "ui",
+      "library",
+      "javascript",
+      "前端",
+      "框架"
+    ]
   },
   {
     "name": "Vue.js 官网",
     "url": "https://vuejs.org/",
-    "tags": ["vue", "frontend", "ui", "framework", "javascript", "前端", "框架"]
+    "tags": [
+      "vue",
+      "frontend",
+      "ui",
+      "framework",
+      "javascript",
+      "前端",
+      "框架"
+    ]
   },
   {
     "name": "Rust 语言圣经",
     "url": "https://doc.rust-lang.org/book/",
-    "tags": ["rust", "backend", "system", "programming", "后端", "文档", "文献"]
+    "tags": [
+      "rust",
+      "backend",
+      "system",
+      "programming",
+      "后端",
+      "文档",
+      "文献"
+    ]
   },
   {
     "name": "Can I use...",
     "url": "https://caniuse.com/",
-    "tags": ["css", "html", "compatibility", "browser", "兼容性", "工具"]
+    "tags": [
+      "css",
+      "html",
+      "compatibility",
+      "browser",
+      "兼容性",
+      "工具"
+    ]
   },
   {
     "name": "Rebang.Today",
@@ -52,12 +89,26 @@
   {
     "name": "DevDocs",
     "url": "https://devdocs.io/",
-    "tags": ["documentation", "api", "reference", "文档", "文献", "工具"]
+    "tags": [
+      "documentation",
+      "api",
+      "reference",
+      "文档",
+      "文献",
+      "工具"
+    ]
   },
   {
     "name": "FFmpeg 官网",
     "url": "https://ffmpeg.org/",
-    "tags": ["ffmpeg", "video", "audio", "media", "工具", "多媒体"]
+    "tags": [
+      "ffmpeg",
+      "video",
+      "audio",
+      "media",
+      "工具",
+      "多媒体"
+    ]
   },
   {
     "name": "了解 FFmpeg：多媒体处理的全能工具",
@@ -78,12 +129,25 @@
   {
     "name": "Crate.io - Rust 生态系统的包管理和分发平台",
     "url": "https://crates.io/",
-    "tags": ["rust", "crates", "crate.io", "包管理", "依赖管理", "开源"]
+    "tags": [
+      "rust",
+      "crates",
+      "crate.io",
+      "包管理",
+      "依赖管理",
+      "开源"
+    ]
   },
   {
     "name": "私 文件手册",
     "url": "https://filethings.net/zh/",
-    "tags": ["文件管理", "数字生活", "工具推荐", "最佳实践", "数据组织"]
+    "tags": [
+      "文件管理",
+      "数字生活",
+      "工具推荐",
+      "最佳实践",
+      "数据组织"
+    ]
   },
   {
     "name": "Set-ExecutionPolicy Remotesigned",
@@ -124,37 +188,83 @@
   {
     "name": "Electron Vite",
     "url": "https://electron-vite.org/",
-    "tags": ["Electron", "Vite", "桌面应用", "快速构建", "热重载", "跨平台"]
+    "tags": [
+      "Electron",
+      "Vite",
+      "桌面应用",
+      "快速构建",
+      "热重载",
+      "跨平台"
+    ]
   },
   {
     "name": "最详细的office激活视频",
     "url": "https://www.bilibili.com/video/BV1UXhbztEcM/?vd_source=af2fdcd8682259c29322d4054c92cc66",
-    "tags": ["Office", "免费安装", "激活教程", "稳定方法", "白嫖"]
+    "tags": [
+      "Office",
+      "免费安装",
+      "激活教程",
+      "稳定方法",
+      "白嫖"
+    ]
   },
   {
     "name": "魔戒",
     "url": "https://www.mojie.me/#/register?code=mdtTZstG",
-    "tags": ["代理", "翻墙", "科学上网", "VPN", "魔戒"]
+    "tags": [
+      "代理",
+      "翻墙",
+      "科学上网",
+      "VPN",
+      "魔戒"
+    ]
   },
   {
     "name": "廖雪峰的博客",
     "url": "https://liaoxuefeng.com/blogs/all/2025-06-19-how-to-generate-pdf/index.html",
-    "tags": ["编程", "教程", "Python", "Java", "JavaScript", "技术博客"]
+    "tags": [
+      "编程",
+      "教程",
+      "Python",
+      "Java",
+      "JavaScript",
+      "技术博客"
+    ]
   },
   {
     "name": "Solana",
     "url": "https://solana.com/zh/docs/intro/quick-start",
-    "tags": ["区块链", "加密货币", "dApp", "高性能", "去中心化"]
+    "tags": [
+      "区块链",
+      "加密货币",
+      "dApp",
+      "高性能",
+      "去中心化"
+    ]
   },
   {
     "name": "Windows 旧版安装 wsl",
     "url": "https://learn.microsoft.com/zh-cn/windows/wsl/install-manual",
-    "tags": ["WSL", "Linux", "Windows", "子系统", "开发工具"]
+    "tags": [
+      "WSL",
+      "Linux",
+      "Windows",
+      "子系统",
+      "开发工具"
+    ]
   },
   {
     "name": "cnki 学术翻译",
     "url": "https://dict.cnki.net/index#",
-    "tags": ["fy", "学术翻译", "CNKI", "知网", "研究论文", "多语言", "专业服务"]
+    "tags": [
+      "fy",
+      "学术翻译",
+      "CNKI",
+      "知网",
+      "研究论文",
+      "多语言",
+      "专业服务"
+    ]
   },
   {
     "name": "lmarena.ai",
@@ -173,117 +283,247 @@
   {
     "name": "Array - MDN Web Docs",
     "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array",
-    "tags": ["JavaScript", "Array", "数组", "数据结构", "编程"]
+    "tags": [
+      "JavaScript",
+      "Array",
+      "数组",
+      "数据结构",
+      "编程"
+    ]
   },
   {
     "name": "Yandex",
     "url": "https://yandex.com/",
-    "tags": ["Yandex", "搜索引擎", "互联网服务", "俄罗斯", "技术公司"]
+    "tags": [
+      "Yandex",
+      "搜索引擎",
+      "互联网服务",
+      "俄罗斯",
+      "技术公司"
+    ]
   },
   {
     "name": "React Router 官网",
     "url": "https://reactrouter.com/en/main",
-    "tags": ["React", "Router", "前端", "路由", "单页应用"]
+    "tags": [
+      "React",
+      "Router",
+      "前端",
+      "路由",
+      "单页应用"
+    ]
   },
   {
     "name": "Vue Router 官网",
     "url": "https://router.vuejs.org/zh/",
-    "tags": ["Vue", "Router", "前端", "路由", "单页应用"]
+    "tags": [
+      "Vue",
+      "Router",
+      "前端",
+      "路由",
+      "单页应用"
+    ]
   },
   {
     "name": "Pinia 官网",
     "url": "https://pinia.vuejs.org/",
-    "tags": ["Vue", "Pinia", "状态管理", "前端", "全局状态"]
+    "tags": [
+      "Vue",
+      "Pinia",
+      "状态管理",
+      "前端",
+      "全局状态"
+    ]
   },
   {
     "name": "Anthony Fu - GitHub",
     "url": "https://antfu.me/",
-    "tags": ["Anthony Fu", "开源", "前端", "Vite", "VueUse", "UnoCSS"]
+    "tags": [
+      "Anthony Fu",
+      "开源",
+      "前端",
+      "Vite",
+      "VueUse",
+      "UnoCSS"
+    ]
   },
   {
     "name": "VitePress 官网",
     "url": "https://vitepress.dev/",
-    "tags": ["VitePress", "静态网站", "文档生成", "前端", "Vue"]
+    "tags": [
+      "VitePress",
+      "静态网站",
+      "文档生成",
+      "前端",
+      "Vue"
+    ]
   },
   {
     "name": "Three.js 官网",
     "url": "https://threejs.org/",
-    "tags": ["Three.js", "3D 图形", "WebGL", "前端", "动画"]
+    "tags": [
+      "Three.js",
+      "3D 图形",
+      "WebGL",
+      "前端",
+      "动画"
+    ]
   },
   {
     "name": "Tailwind CSS 官网",
     "url": "https://tailwindcss.com/",
-    "tags": ["Tailwind CSS", "CSS 框架", "前端", "响应式设计", "用户界面"]
+    "tags": [
+      "Tailwind CSS",
+      "CSS 框架",
+      "前端",
+      "响应式设计",
+      "用户界面"
+    ]
   },
   {
     "name": "Drizzle ORM 官网",
     "url": "https://orm.drizzle.team/",
-    "tags": ["Drizzle ORM", "ORM", "数据库", "高性能"]
+    "tags": [
+      "Drizzle ORM",
+      "ORM",
+      "数据库",
+      "高性能"
+    ]
   },
   {
     "name": "Bun Guides",
     "url": "https://bun.com/guides",
-    "tags": ["Guides", "Bun", "JavaScript", "运行时", "前端"]
+    "tags": [
+      "Guides",
+      "Bun",
+      "JavaScript",
+      "运行时",
+      "前端"
+    ]
   },
   {
     "name": "TypeScript 官网",
     "url": "https://www.typescriptlang.org/docs/",
-    "tags": ["TypeScript", "JavaScript", "静态类型", "前端", "编程语言"]
+    "tags": [
+      "TypeScript",
+      "JavaScript",
+      "静态类型",
+      "前端",
+      "编程语言"
+    ]
   },
   {
     "name": "三个经典示例解释什么是「零知识证明」",
     "url": "https://www.cnblogs.com/primihub/p/17664137.html",
-    "tags": ["零知识证明", "密码学", "区块链", "隐私保护"]
+    "tags": [
+      "零知识证明",
+      "密码学",
+      "区块链",
+      "隐私保护"
+    ]
   },
   {
     "name": "LeetCode 官网",
     "url": "https://leetcode.com/",
-    "tags": ["LeetCode", "编程挑战", "算法", "数据结构", "面试准备"]
+    "tags": [
+      "LeetCode",
+      "编程挑战",
+      "算法",
+      "数据结构",
+      "面试准备"
+    ]
   },
   {
     "name": "揭示 2026 年的 17 大新技术趋势",
     "url": "https://www.bilibili.com/video/BV1DHeczdEDW/?spm_id_from=333.337.search-card.all.click&vd_source=a0c54f6837e5cf6c6d150fd6d47adcc2",
-    "tags": ["技术趋势", "2026", "新技术", "科技发展"]
+    "tags": [
+      "技术趋势",
+      "2026",
+      "新技术",
+      "科技发展"
+    ]
   },
   {
     "name": "2024 年值得关注的 15 大软件开发趋势",
     "url": "https://zhuanlan.zhihu.com/p/677738093",
-    "tags": ["软件开发", "技术趋势", "2024", "编程"]
+    "tags": [
+      "软件开发",
+      "技术趋势",
+      "2024",
+      "编程"
+    ]
   },
   {
     "name": "OpenCV 视频处理[菜鸟教程]",
     "url": "https://www.runoob.com/opencv/opencv-video.html",
-    "tags": ["OpenCV", "视频处理", "计算机视觉", "图像处理"]
+    "tags": [
+      "OpenCV",
+      "视频处理",
+      "计算机视觉",
+      "图像处理"
+    ]
   },
   {
     "name": "搞定 FFmpeg 跨平台硬件加速：我的自动选择方案与踩坑实录 (含 Python 代码)",
     "url": "https://pyvideotrans.com/blog/ffmpeghardward",
-    "tags": ["FFmpeg", "硬件加速", "跨平台", "视频处理", "Python"]
+    "tags": [
+      "FFmpeg",
+      "硬件加速",
+      "跨平台",
+      "视频处理",
+      "Python"
+    ]
   },
   {
     "name": "NAG 玩家社区",
     "url": "https://bbs.nga.cn/?rand=942",
-    "tags": ["NAG", "玩家社区", "游戏讨论", "精英玩家"]
+    "tags": [
+      "NAG",
+      "玩家社区",
+      "游戏讨论",
+      "精英玩家"
+    ]
   },
   {
     "name": "36 氪金",
     "url": "https://36kr.com/",
-    "tags": ["36氪", "科技媒体", "创业", "投资", "商业分析"]
+    "tags": [
+      "36氪",
+      "科技媒体",
+      "创业",
+      "投资",
+      "商业分析"
+    ]
   },
   {
     "name": "下载狗",
     "url": "https://www.xiazaitool.com/blbl",
-    "tags": ["软件下载", "游戏", "应用程序", "免费资源"]
+    "tags": [
+      "软件下载",
+      "游戏",
+      "应用程序",
+      "免费资源"
+    ]
   },
   {
     "name": "bilibili",
     "url": "https://www.bilibili.com/",
-    "tags": ["bilibili", "视频平台", "年轻人", "文化社区"]
+    "tags": [
+      "bilibili",
+      "视频平台",
+      "年轻人",
+      "文化社区"
+    ]
   },
   {
     "name": "布鲁克林有棵树",
     "url": "https://www.bilibili.com/video/BV1Wg411e7uK/?spm_id_from=333.337.search-card.all.click&vd_source=af2fdcd8682259c29322d4054c92cc66",
-    "tags": ["电影", "蓝光", "x264", "布鲁克林"]
+    "tags": [
+      "电影",
+      "蓝光",
+      "x264",
+      "布鲁克林"
+    ]
   },
   {
     "name": "Deno Deploy",
@@ -300,12 +540,27 @@
   {
     "name": "browser-video-parser 一体化视频解析器",
     "url": "https://browser-video-parser.emo-czq.deno.net/",
-    "tags": ["video", "parser", "hls", "deno", "前端", "视频解析"]
+    "tags": [
+      "video",
+      "parser",
+      "hls",
+      "deno",
+      "前端",
+      "视频解析"
+    ]
   },
   {
     "name": "online-play-m3u8 M3U8 在线播放器",
     "url": "https://online-play-m3u8.emo-czq.deno.net/",
-    "tags": ["m3u8", "hls", "video", "player", "deno", "前端", "视频播放"]
+    "tags": [
+      "m3u8",
+      "hls",
+      "video",
+      "player",
+      "deno",
+      "前端",
+      "视频播放"
+    ]
   },
   {
     "name": "WSL2启动时提示：参考的对象类型不支持尝试的操作",
@@ -322,16 +577,53 @@
   {
     "name": "solana - 开发环境之windows安装、编译、测试",
     "url": "https://learnblockchain.cn/article/15214",
-    "tags": ["solana", "windows", "开发环境", "安装", "编译", "测试"]
+    "tags": [
+      "solana",
+      "windows",
+      "开发环境",
+      "安装",
+      "编译",
+      "测试"
+    ]
   },
   {
     "name": "CSS Flexbox Center",
     "code": "display: flex;\njustify-content: center;\nalign-items: center;",
-    "tags": ["css", "flexbox", "layout", "snippet", "frontend"]
+    "tags": [
+      "css",
+      "flexbox",
+      "layout",
+      "snippet",
+      "frontend"
+    ]
   },
   {
     "name": "Deno Jsr",
     "url": "https://jsr.io/@std",
-    "tags": ["Deno", "Jsr", "JavaScript", "运行时", "模块"]
+    "tags": [
+      "Deno",
+      "Jsr",
+      "JavaScript",
+      "运行时",
+      "模块"
+    ]
+  },
+  {
+    "name": "单行文本省略号",
+    "tags": [
+      "css",
+      "省略号",
+      "..."
+    ],
+    "code": ".ellipsis-single {\n  width: 200px;              /* 固定宽度 */\n  overflow: hidden;          /* 隐藏溢出文本 */\n  text-overflow: ellipsis;   /* 显示省略号 */\n  white-space: nowrap;       /* 防止换行 */\n}\n"
+  },
+  {
+    "name": "多行文本省略号",
+    "tags": [
+      "css",
+      "多行文本省略号",
+      "..."
+    ],
+    "code": ".ellipsis-multi {\n  width: 200px;              /* 固定宽度 */\n  overflow: hidden;          /* 隐藏溢出文本 */\n  display: -webkit-box;      /* 必须使用 flex 布局 */\n  -webkit-box-orient: vertical; /* 设置盒子方向为垂直 */\n  -webkit-line-clamp: 3;     /* 限制显示的行数 */\n}\n"
   }
 ]
