@@ -14,13 +14,15 @@
     >
   </head>
   <body class="dark-mode">
-    <!-- 默认开启暗黑模式 -->
-
-    <button id="theme-toggle" title="切换显示模式">SYS</button>
+    <!-- 修改这里，把按钮和新链接包在一个容器里 -->
+    <div class="top-bar">
+      <a href="/add.html" class="nav-link">ADD_DATA &gt;</a>
+      <button id="theme-toggle" title="切换显示模式">SYS</button>
+    </div>
 
     <main class="content-wrapper">
+      <!-- ... 搜索框和结果容器等内容保持不变 ... -->
       <div class="search-box">
-        <!-- 使用 ::before 伪元素来创建命令行提示符效果 -->
         <input
           type="text"
           id="searchInput"
@@ -29,14 +31,8 @@
           autocomplete="off"
         >
       </div>
-
-      <div id="search-stats" class="search-stats">
-        <!-- 搜索统计信息 -->
-      </div>
-
-      <div id="resultsContainer">
-        <!-- 搜索结果 -->
-      </div>
+      <div id="search-stats" class="search-stats"></div>
+      <div id="resultsContainer"></div>
     </main>
 
     <script src="script.js"></script>

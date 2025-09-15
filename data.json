@@ -2,13 +2,11 @@
   {
     "name": "Deno 官网",
     "url": "https://docs.deno.com/runtime/fundamentals/http_server/",
-    "description": "Deno - A modern runtime for JavaScript and TypeScript.",
     "tags": ["deno", "runtime", "javascript", "后端", "official"]
   },
   {
     "name": "MDN Web Docs",
     "url": "https://developer.mozilla.org/",
-    "description": "为 Web 开发者（从初学者到专家）提供的资源。前端开发必备文档。",
     "tags": [
       "mdn",
       "mozilla",
@@ -23,31 +21,26 @@
   {
     "name": "React 官网",
     "url": "https://react.dev/",
-    "description": "用于构建 Web 和原生用户界面的库。",
     "tags": ["react", "frontend", "ui", "library", "javascript", "前端", "框架"]
   },
   {
     "name": "Vue.js 官网",
     "url": "https://vuejs.org/",
-    "description": "渐进式 JavaScript 框架。",
     "tags": ["vue", "frontend", "ui", "framework", "javascript", "前端", "框架"]
   },
   {
     "name": "Rust 语言圣经",
     "url": "https://doc.rust-lang.org/book/",
-    "description": "学习 Rust 编程语言的官方书籍。",
     "tags": ["rust", "backend", "system", "programming", "后端", "文档", "文献"]
   },
   {
     "name": "Can I use...",
     "url": "https://caniuse.com/",
-    "description": "查询前端技术（HTML, CSS, JS）在各浏览器中的兼容性。",
     "tags": ["css", "html", "compatibility", "browser", "兼容性", "工具"]
   },
   {
     "name": "Rebang.Today",
     "url": "https://rebang.today/dev",
-    "description": "Rebang.Today 是一个专注于分享高质量技术文章和资源的网站，涵盖编程、前端、后端、DevOps、人工智能等多个领域，旨在为开发者提供有价值的内容和最新的行业动态。",
     "tags": [
       "rebang",
       "rebang.today",
@@ -59,19 +52,16 @@
   {
     "name": "DevDocs",
     "url": "https://devdocs.io/",
-    "description": "结合了多个 API 文档的快速参考网站，支持离线使用。",
     "tags": ["documentation", "api", "reference", "文档", "文献", "工具"]
   },
   {
     "name": "FFmpeg 官网",
     "url": "https://ffmpeg.org/",
-    "description": "一个开源的音视频处理工具，支持转换、录制、流式传输等功能。",
     "tags": ["ffmpeg", "video", "audio", "media", "工具", "多媒体"]
   },
   {
     "name": "了解 FFmpeg：多媒体处理的全能工具",
     "url": "https://filethings.net/zh/ffmpeg-overview/",
-    "description": "FFmpeg 是一个开源的多媒体处理工具，支持视频和音频的录制、转换和流式传输。它提供了丰富的功能，如格式转换、剪辑、合并、滤镜应用等，广泛应用于视频编辑、流媒体服务和多媒体开发中。",
     "tags": [
       "ffmpeg",
       "视频处理",
@@ -88,19 +78,16 @@
   {
     "name": "Crate.io - Rust 生态系统的包管理和分发平台",
     "url": "https://crates.io/",
-    "description": "Crates.io 是 Rust 编程语言的官方包管理和分发平台，类似于 JavaScript 的 npm 或 Python 的 PyPI。它允许开发者发布、分享和管理 Rust 库（称为 'crates'），促进代码重用和社区协作。Crates.io 提供了强大的搜索和依赖管理功能，使得 Rust 开发者能够轻松找到所需的库并集成到他们的项目中。",
     "tags": ["rust", "crates", "crate.io", "包管理", "依赖管理", "开源"]
   },
   {
     "name": "私 文件手册",
     "url": "https://filethings.net/zh/",
-    "description": "私 文件手册 是一个专注于文件管理和数字生活的资源网站，提供实用的技巧、工具推荐和最佳实践，帮助用户高效地组织和管理他们的数字文件和数据。",
     "tags": ["文件管理", "数字生活", "工具推荐", "最佳实践", "数据组织"]
   },
   {
     "name": "Set-ExecutionPolicy Remotesigned",
     "url": "",
-    "description": "Set-ExecutionPolicy RemoteSigned 是 Windows PowerShell 中的一个命令，用于设置脚本执行策略。RemoteSigned 策略允许本地创建的脚本运行，而从互联网下载的脚本必须具有有效的数字签名才能执行。这有助于提高系统的安全性，防止未经授权的脚本运行。",
     "tags": [
       "PowerShell",
       "Set-ExecutionPolicy",
@@ -120,13 +107,11 @@
       "vue",
       "svelte",
       "web components"
-    ],
-    "description": "Supercons 是一个免费的开源图标库，提供了丰富的 SVG 图标，支持多种前端框架如 React、Vue 和 Svelte。它旨在帮助开发者轻松集成高质量的图标到他们的项目中，提升用户界面的视觉效果和用户体验。"
+    ]
   },
   {
     "name": "Claude code",
     "url": "https://claude.ai/",
-    "description": "Claude 是由 Anthropic 开发的先进 AI 助手，旨在通过自然语言处理技术帮助用户完成各种任务。它能够理解和生成类似人类的文本，支持多种应用场景，如内容创作、编程辅助、信息查询等。Claude 强调安全性和可控性，致力于为用户提供可靠且高效的 AI 体验。",
     "tags": [
       "Claude",
       "Anthropic",
@@ -139,49 +124,41 @@
   {
     "name": "Electron Vite",
     "url": "https://electron-vite.org/",
-    "description": "Electron Vite 是一个结合了 Electron 和 Vite 的开发工具，旨在简化桌面应用程序的构建过程。它利用 Vite 的快速构建和热重载功能，提高了开发效率，同时保持了 Electron 强大的跨平台能力。Electron Vite 提供了开箱即用的配置，使开发者能够专注于应用逻辑，而无需担心复杂的构建设置。",
     "tags": ["Electron", "Vite", "桌面应用", "快速构建", "热重载", "跨平台"]
   },
   {
     "name": "最详细的office激活视频",
     "url": "https://www.bilibili.com/video/BV1UXhbztEcM/?vd_source=af2fdcd8682259c29322d4054c92cc66",
-    "description": "被破解版坑怕了？2025年Office免费装十分稳定，这波操作太值了！[白嫖吖]（附带最详细的office激活视频）",
     "tags": ["Office", "免费安装", "激活教程", "稳定方法", "白嫖"]
   },
   {
     "name": "魔戒",
     "url": "https://www.mojie.me/#/register?code=mdtTZstG",
-    "description": "魔戒 - 专业的代理服务，帮助用户轻松翻墙，保障上网隐私与安全。支持多平台使用，提供高速稳定的VPN连接，让您畅享自由互联网。",
     "tags": ["代理", "翻墙", "科学上网", "VPN", "魔戒"]
   },
   {
     "name": "廖雪峰的博客",
     "url": "https://liaoxuefeng.com/blogs/all/2025-06-19-how-to-generate-pdf/index.html",
-    "description": "廖雪峰的官方网站，提供高质量的编程教程和技术文章，涵盖 Python、Java、JavaScript 等多种编程语言和技术栈，适合初学者和有经验的开发者学习和参考。",
     "tags": ["编程", "教程", "Python", "Java", "JavaScript", "技术博客"]
   },
   {
     "name": "Solana",
     "url": "https://solana.com/zh/docs/intro/quick-start",
-    "description": "Solana 是一个高性能的区块链平台，旨在提供快速、安全且可扩展的去中心化应用（dApp）和加密货币交易。通过其独特的共识机制和技术架构，Solana 实现了每秒数千笔交易的处理能力，极大地提升了区块链的效率和用户体验。",
     "tags": ["区块链", "加密货币", "dApp", "高性能", "去中心化"]
   },
   {
     "name": "Windows 旧版安装 wsl",
     "url": "https://learn.microsoft.com/zh-cn/windows/wsl/install-manual",
-    "description": "Windows Subsystem for Linux (WSL) 允许用户在 Windows 上运行 Linux 环境，包括大部分命令行工具、应用程序和服务。通过 WSL，开发者可以在不离开 Windows 的情况下使用 Linux 的强大功能，提升开发效率。",
     "tags": ["WSL", "Linux", "Windows", "子系统", "开发工具"]
   },
   {
     "name": "cnki 学术翻译",
     "url": "https://dict.cnki.net/index#",
-    "description": "CNKI 学术翻译是中国知网提供的专业学术翻译服务，旨在帮助研究人员和学者将学术论文、研究报告等文献从一种语言翻译成另一种语言。该服务支持多种语言之间的互译，确保翻译内容的准确性和专业性，助力学术交流与合作。",
     "tags": ["fy", "学术翻译", "CNKI", "知网", "研究论文", "多语言", "专业服务"]
   },
   {
     "name": "lmarena.ai",
     "url": "https://lmarena.ai/",
-    "description": "LMArena 是一个专注于大型语言模型（LLM）评测和比较的平台，旨在帮助用户了解和选择适合其需求的语言模型。该平台提供了丰富的评测数据、模型性能分析和用户反馈，涵盖了各种应用场景，如文本生成、翻译、问答等。通过 LMArena，开发者和研究人员可以更好地了解不同语言模型的优缺点，从而做出明智的选择。",
     "tags": [
       "LMArena",
       "大型语言模型",
@@ -196,145 +173,121 @@
   {
     "name": "Array - MDN Web Docs",
     "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array",
-    "description": "Array 对象用于存储多个值的有序集合。它提供了多种方法来操作数组，如添加、删除、排序和遍历元素等。数组是 JavaScript 中常用的数据结构，广泛应用于各种编程场景。",
     "tags": ["JavaScript", "Array", "数组", "数据结构", "编程"]
   },
   {
     "name": "Yandex",
     "url": "https://yandex.com/",
-    "description": "Yandex 是俄罗斯最大的搜索引擎和互联网公司，提供多种在线服务，包括搜索、电子邮件、地图、云存储等。Yandex 致力于为用户提供高效、便捷的互联网体验，拥有强大的技术实力和广泛的用户基础。",
     "tags": ["Yandex", "搜索引擎", "互联网服务", "俄罗斯", "技术公司"]
   },
   {
     "name": "React Router 官网",
     "url": "https://reactrouter.com/en/main",
-    "description": "React Router 是 React 应用程序的标准路由库，允许开发者在单页应用中实现动态路由和导航功能。它提供了灵活的路由配置和强大的导航组件，使得构建复杂的用户界面变得更加简单和高效。",
     "tags": ["React", "Router", "前端", "路由", "单页应用"]
   },
   {
     "name": "Vue Router 官网",
     "url": "https://router.vuejs.org/zh/",
-    "description": "Vue Router 是 Vue.js 官方的路由管理器，专为构建单页应用（SPA）设计。它提供了丰富的功能，如嵌套路由、动态路由匹配、导航守卫等，帮助开发者轻松实现复杂的路由逻辑和用户导航体验。",
     "tags": ["Vue", "Router", "前端", "路由", "单页应用"]
   },
   {
     "name": "Pinia 官网",
     "url": "https://pinia.vuejs.org/",
-    "description": "Pinia 是 Vue.js 的状态管理库。",
     "tags": ["Vue", "Pinia", "状态管理", "前端", "全局状态"]
   },
   {
     "name": "Anthony Fu - GitHub",
     "url": "https://antfu.me/",
-    "description": "Anthony Fu 是一位知名的开源开发者，贡献了多个流行的前端工具和库，如 Vite、VueUse 和 UnoCSS。他的工作极大地推动了前端开发社区的发展，提供了高效且易用的解决方案。",
     "tags": ["Anthony Fu", "开源", "前端", "Vite", "VueUse", "UnoCSS"]
   },
   {
     "name": "VitePress 官网",
     "url": "https://vitepress.dev/",
-    "description": "VitePress 是一个基于 Vite 和 Vue 的静态网站生成器，专为文档网站设计。它提供了快速的构建速度、简洁的配置和易用的主题系统，使得创建和维护文档变得更加高效。",
     "tags": ["VitePress", "静态网站", "文档生成", "前端", "Vue"]
   },
   {
     "name": "Three.js 官网",
     "url": "https://threejs.org/",
-    "description": "Three.js 是一个流行的 JavaScript 库，用于在网页上创建和显示 3D 图形。它基于 WebGL，提供了丰富的功能和工具，使开发者能够轻松构建复杂的三维场景和动画效果。",
     "tags": ["Three.js", "3D 图形", "WebGL", "前端", "动画"]
   },
   {
     "name": "Tailwind CSS 官网",
     "url": "https://tailwindcss.com/",
-    "description": "Tailwind CSS 是一个实用优先的 CSS 框架，提供了丰富的预定义类，帮助开发者快速构建响应式且美观的用户界面。它强调灵活性和可定制性，使得样式设计变得更加高效。",
     "tags": ["Tailwind CSS", "CSS 框架", "前端", "响应式设计", "用户界面"]
   },
   {
     "name": "Drizzle ORM 官网",
     "url": "https://orm.drizzle.team/",
-    "description": "Drizzle ORM 是一个现代化的 TypeScript ORM，专为高性能和可扩展性设计。它支持多种数据库，提供类型安全的查询构建器和迁移工具，帮助开发者轻松管理数据库操作。",
     "tags": ["Drizzle ORM", "ORM", "数据库", "高性能"]
   },
   {
     "name": "Bun Guides",
     "url": "https://bun.com/guides",
-    "description": "Bun 案例",
     "tags": ["Guides", "Bun", "JavaScript", "运行时", "前端"]
   },
   {
     "name": "TypeScript 官网",
     "url": "https://www.typescriptlang.org/docs/",
-    "description": "TypeScript 是 JavaScript 的超集，添加了静态类型和面向对象编程的特性。它帮助开发者在构建大型应用时提高代码的可维护性和可靠性。",
     "tags": ["TypeScript", "JavaScript", "静态类型", "前端", "编程语言"]
   },
   {
     "name": "三个经典示例解释什么是「零知识证明」",
     "url": "https://www.cnblogs.com/primihub/p/17664137.html",
-    "description": "一个证明系统使用户能够公开分享知识或所有权的证明，而不揭示其细节。",
     "tags": ["零知识证明", "密码学", "区块链", "隐私保护"]
   },
   {
     "name": "LeetCode 官网",
     "url": "https://leetcode.com/",
-    "description": "LeetCode 是一个在线编程挑战平台，提供丰富的算法和数据结构题目，帮助开发者提升编程技能和准备技术面试。",
     "tags": ["LeetCode", "编程挑战", "算法", "数据结构", "面试准备"]
   },
   {
     "name": "揭示 2026 年的 17 大新技术趋势",
     "url": "https://www.bilibili.com/video/BV1DHeczdEDW/?spm_id_from=333.337.search-card.all.click&vd_source=a0c54f6837e5cf6c6d150fd6d47adcc2",
-    "description": "2026 年的 17 大新技术趋势",
     "tags": ["技术趋势", "2026", "新技术", "科技发展"]
   },
   {
     "name": "2024 年值得关注的 15 大软件开发趋势",
     "url": "https://zhuanlan.zhihu.com/p/677738093",
-    "description": "2024 年值得关注的 15 大软件开发趋势",
     "tags": ["软件开发", "技术趋势", "2024", "编程"]
   },
   {
     "name": "OpenCV 视频处理[菜鸟教程]",
     "url": "https://www.runoob.com/opencv/opencv-video.html",
-    "description": "OpenCV 视频处理",
     "tags": ["OpenCV", "视频处理", "计算机视觉", "图像处理"]
   },
   {
     "name": "搞定 FFmpeg 跨平台硬件加速：我的自动选择方案与踩坑实录 (含 Python 代码)",
     "url": "https://pyvideotrans.com/blog/ffmpeghardward",
-    "description": "语音识别",
     "tags": ["FFmpeg", "硬件加速", "跨平台", "视频处理", "Python"]
   },
   {
     "name": "NAG 玩家社区",
     "url": "https://bbs.nga.cn/?rand=942",
-    "description": "精英玩家俱乐部",
     "tags": ["NAG", "玩家社区", "游戏讨论", "精英玩家"]
   },
   {
     "name": "36 氪金",
     "url": "https://36kr.com/",
-    "description": "36氪是中国领先的科技媒体和创业服务平台，专注于报道创新创业、科技趋势和商业模式，帮助创业者和投资者获取最新的行业动态和深度分析。",
     "tags": ["36氪", "科技媒体", "创业", "投资", "商业分析"]
   },
   {
     "name": "下载狗",
     "url": "https://www.xiazaitool.com/blbl",
-    "description": "下载狗是一个提供各种软件、游戏和应用程序免费下载的网站，涵盖了Windows、Mac、Android等多个平台，用户可以方便地找到所需的资源。",
     "tags": ["软件下载", "游戏", "应用程序", "免费资源"]
   },
   {
     "name": "bilibili",
     "url": "https://www.bilibili.com/",
-    "description": "bilibili 是中国领先的年轻人文化社区和视频平台",
     "tags": ["bilibili", "视频平台", "年轻人", "文化社区"]
   },
   {
     "name": "布鲁克林有棵树",
     "url": "https://www.bilibili.com/video/BV1Wg411e7uK/?spm_id_from=333.337.search-card.all.click&vd_source=af2fdcd8682259c29322d4054c92cc66",
-    "description": "布鲁克林有棵树 A Tree Grows in Brooklyn (1945）.蓝光720p.bluray.x264",
     "tags": ["电影", "蓝光", "x264", "布鲁克林"]
   },
   {
     "name": "Deno Deploy",
     "url": "https://console.deno.com/emo-czq",
-    "description": "Deno Deploy 是一个全球分布的无服务器计算平台，允许开发者直接在边缘网络上运行 JavaScript 和 TypeScript 代码。它提供了快速的响应时间和高可用性，适用于构建现代 Web 应用和 API。",
     "tags": [
       "Deno",
       "Deploy",
@@ -347,13 +300,38 @@
   {
     "name": "browser-video-parser 一体化视频解析器",
     "url": "https://browser-video-parser.emo-czq.deno.net/",
-    "description": "在您的浏览器中安全地将视频分解为图片帧和音频，所有处理均在本地完成。",
     "tags": ["video", "parser", "hls", "deno", "前端", "视频解析"]
   },
   {
     "name": "online-play-m3u8 M3U8 在线播放器",
     "url": "https://online-play-m3u8.emo-czq.deno.net/",
-    "description": "一个简洁、轻量的 HLS 流媒体播放工具",
     "tags": ["m3u8", "hls", "video", "player", "deno", "前端", "视频播放"]
+  },
+  {
+    "name": "WSL2启动时提示：参考的对象类型不支持尝试的操作",
+    "url": "https://blog.csdn.net/fangye945a/article/details/123832623",
+    "tags": [
+      "参考的对象类型不支持尝试的操作",
+      "WSL2",
+      "错误解决",
+      "Windows",
+      "Linux",
+      "子系统"
+    ]
+  },
+  {
+    "name": "solana - 开发环境之windows安装、编译、测试",
+    "url": "https://learnblockchain.cn/article/15214",
+    "tags": ["solana", "windows", "开发环境", "安装", "编译", "测试"]
+  },
+  {
+    "name": "CSS Flexbox Center",
+    "code": "display: flex;\njustify-content: center;\nalign-items: center;",
+    "tags": ["css", "flexbox", "layout", "snippet", "frontend"]
+  },
+  {
+    "name": "Deno Jsr",
+    "url": "https://jsr.io/@std",
+    "tags": ["Deno", "Jsr", "JavaScript", "运行时", "模块"]
   }
 ]

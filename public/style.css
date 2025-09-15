@@ -1,6 +1,16 @@
-/* --- 主题颜色变量定义 --- */
+/* --- 主题颜色变量定义 (不变) --- */
 :root {
-    /* 亮色主题 (高对比度 "无菌" 科技感) */
+    /* ... */
+}
+
+body.dark-mode {
+    /* ... */
+}
+
+/* ... (保留所有 body, content-wrapper, theme-toggle, search-box, search-stats 等样式) ... */
+
+/* --- 之前的 CSS 代码，保持不变 --- */
+:root {
     --bg-color: #e8e8e8;
     --text-color: #1a1a1a;
     --text-color-secondary: #555;
@@ -13,21 +23,17 @@
 }
 
 body.dark-mode {
-    /* 暗色主题 (经典赛博朋克) */
     --bg-color: #0d0d1a;
     --text-color: #c5c5ff;
     --text-color-secondary: #6c759c;
     --accent-color: #00f0ff;
-    /* 霓虹青色 */
     --secondary-accent-color: #ff00c8;
-    /* 霓虹洋红 */
     --border-color: rgba(0, 240, 255, 0.3);
     --glow-color: rgba(0, 240, 255, 0.5);
     --scanline-opacity: 0.1;
     --grid-opacity: 0.04;
 }
 
-/* --- 全局与背景 --- */
 body {
     font-family: 'Share Tech Mono', monospace;
     background-color: var(--bg-color);
@@ -36,23 +42,15 @@ body {
     padding: 20px;
     overflow-x: hidden;
     transition: background-color 0.4s ease;
-
-    /* 背景网格效果 */
-    background-image:
-        linear-gradient(rgba(128, 128, 128, var(--scanline-opacity)) 50%, transparent 50%),
-        linear-gradient(var(--border-color) 1px, transparent 1px),
-        linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
+    background-image: linear-gradient(rgba(128, 128, 128, var(--scanline-opacity)) 50%, transparent 50%), linear-gradient(var(--border-color) 1px, transparent 1px), linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
     background-size: 100% 4px, 30px 30px, 30px 30px;
 }
 
-/* --- 布局容器 --- */
 .content-wrapper {
     max-width: 800px;
     margin: 5vh auto 0;
-    /* 距离顶部 5% 视窗高度 */
 }
 
-/* --- 模式切换按钮 --- */
 #theme-toggle {
     position: fixed;
     top: 15px;
@@ -66,7 +64,6 @@ body {
     cursor: pointer;
     transition: all 0.2s ease;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
-    /* 斜切角 */
 }
 
 #theme-toggle:hover {
@@ -74,14 +71,12 @@ body {
     text-shadow: 0 0 5px var(--glow-color);
 }
 
-/* --- 搜索框 --- */
 .search-box {
     position: relative;
     display: flex;
     align-items: center;
 }
 
-/* 模拟命令行提示符 */
 .search-box::before {
     content: '>$';
     color: var(--accent-color);
@@ -118,7 +113,6 @@ body {
     opacity: 0.8;
 }
 
-/* --- 统计信息 --- */
 .search-stats {
     color: var(--text-color-secondary);
     font-size: 0.8em;
@@ -128,7 +122,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* --- 结果列表 --- */
 #resultsContainer {
     max-height: 70vh;
     overflow-y: auto;
@@ -148,48 +141,97 @@ body {
     background-color: var(--border-color);
 }
 
+/* --- 结果项样式更新 --- */
 .result-item {
-    padding: 12px 0;
+    padding: 15px 0;
     border-bottom: 1px dashed var(--border-color);
-    transition: background-color 0.2s;
 }
 
-/* 鼠标悬浮时添加一个选择器标记 */
-.result-item:hover::before {
-    content: '>>';
-    color: var(--accent-color);
-    margin-right: 10px;
-    display: inline-block;
-}
-
-.result-item a {
-    text-decoration: none;
-    color: var(--text-color);
+.result-item h3 {
+    /* 替换之前的 a 标签样式 */
+    margin: 0 0 8px 0;
     font-size: 1.1em;
-    transition: color 0.2s, text-shadow 0.2s;
+    color: var(--text-color);
+    font-weight: normal;
 }
 
-.result-item:hover a {
+.result-item:hover h3 {
     color: var(--accent-color);
     text-shadow: 0 0 8px var(--glow-color);
 }
 
 .result-item .url {
     font-size: 0.85em;
-    color: var(--text-color-secondary);
-    margin: 4px 0 6px;
+    margin: 0 0 10px;
     word-break: break-all;
-    opacity: 0.7;
 }
 
-.result-item .description {
-    margin: 0 0 8px;
+.result-item .url a {
+    color: var(--text-color-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.result-item .url a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* --- 新增：代码块和复制按钮样式 --- */
+.code-block-wrapper {
+    position: relative;
+    margin: 10px 0;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: color-mix(in srgb, var(--bg-color) 70%, transparent);
+    border: 1px solid var(--border-color);
+    color: var(--text-color-secondary);
+    font-family: inherit;
+    font-size: 0.8em;
+    padding: 2px 8px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.code-block-wrapper:hover .copy-btn {
+    opacity: 1;
+}
+
+.copy-btn:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.copy-btn.copied {
+    color: var(--secondary-accent-color);
+    border-color: var(--secondary-accent-color);
+}
+
+pre {
+    background: color-mix(in srgb, var(--border-color) 20%, transparent);
+    padding: 12px;
+    padding-top: 30px;
+    /* 为复制按钮留出空间 */
+    border: 1px solid var(--border-color);
+    overflow-x: auto;
+    margin: 0;
+}
+
+pre code {
+    font-family: 'Share Tech Mono', monospace;
     font-size: 0.9em;
-    line-height: 1.5;
+    color: var(--text-color);
+    white-space: pre;
 }
 
+/* --- 标签和无结果样式 (不变) --- */
 .result-item .tags {
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .tag {
@@ -208,4 +250,26 @@ body {
     text-align: center;
     padding: 40px 20px;
     font-style: italic;
+}
+
+/* 添加到 public/style.css */
+.top-bar {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 20px;
+}
+
+.nav-link {
+    font-family: 'Share Tech Mono', monospace;
+    color: var(--text-color-secondary);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+    text-shadow: 0 0 5px var(--glow-color);
 }

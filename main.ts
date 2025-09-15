@@ -1,62 +1,104 @@
-import { serveDir } from "jsr:@std/http/file-server";
+import { serveDir } from "@std/http/file-server";
 
-// 定义数据结构类型，这在 TypeScript 中是个好习惯
-interface Website {
+interface DataEntry {
   name: string;
-  url: string;
-  description: string;
+  url?: string;
+  code?: string;
   tags: string[];
 }
 
-let websites: Website[] = [];
+let database: DataEntry[] = [];
+const DATA_FILE_PATH = "./data.json";
 
-// 尝试加载 JSON 数据
-try {
-  const jsonData = await Deno.readTextFile("./data.json");
-  websites = JSON.parse(jsonData);
-  console.log(`✅ 成功加载 ${websites.length} 条网址数据。`);
-} catch (error) {
-  console.error("❌ 加载 data.json 文件失败:", error);
-  // 即使加载失败，服务也可以继续运行，只是搜索结果会为空
+// 封装一个加载数据的函数
+async function loadDatabase() {
+  try {
+    const jsonData = await Deno.readTextFile(DATA_FILE_PATH);
+    database = JSON.parse(jsonData);
+    console.log(`✅ Successfully loaded ${database.length} data entries.`);
+  } catch (error) {
+    console.error("❌ Failed to load data.json:", error);
+    // 如果文件不存在，可以初始化为空数组
+    if (error instanceof Deno.errors.NotFound) {
+      database = [];
+    }
+  }
 }
 
-// 启动服务
-Deno.serve(async (req) => {
+// 初始加载
+await loadDatabase();
+
+Deno.serve({ port: 8000 }, async (req) => {
   const url = new URL(req.url);
   const pathname = url.pathname;
 
   console.log(`[${new Date().toISOString()}] ${req.method} ${pathname}`);
 
-  // API 路由：处理搜索请求
-  if (pathname === "/api/search") {
+  // API 路由: 搜索
+  if (pathname === "/api/search" && req.method === "GET") {
+    // ... (这部分逻辑保持不变) ...
     const query = url.searchParams.get("q")?.toLowerCase() || "";
-
     if (!query) {
-      // 如果查询为空，返回空数组
-      return new Response(JSON.stringify([]), {
+      return new Response("[]", {
         headers: { "Content-Type": "application/json" },
       });
     }
-
-    const results = websites.filter((site) =>
-      site.name.toLowerCase().includes(query) ||
-      site.description.toLowerCase().includes(query) ||
-      site.tags.some((tag) => tag.toLowerCase().includes(query))
+    const results = database.filter((entry) =>
+      entry.name.toLowerCase().includes(query) ||
+      entry.code?.toLowerCase().includes(query) ||
+      entry.tags.some((tag) => tag.toLowerCase().includes(query))
     );
-
     return new Response(JSON.stringify(results), {
       headers: { "Content-Type": "application/json" },
     });
   }
 
-  // 静态文件服务：托管 public 目录下的所有文件
-  // 这会让用户可以通过浏览器访问 index.html, style.css, script.js
+  // --- 新增 API 路由: 添加数据 ---
+  if (pathname === "/api/add" && req.method === "POST") {
+    try {
+      const newEntry: DataEntry = await req.json();
+
+      // 基本的数据验证
+      if (!newEntry.name || !newEntry.tags || newEntry.tags.length === 0) {
+        return new Response(
+          JSON.stringify({ error: "Name and tags are required." }),
+          { status: 400 },
+        );
+      }
+
+      // 重新读取文件，确保数据最新，防止并发问题
+      await loadDatabase();
+
+      // 添加新条目到数组
+      database.push(newEntry);
+
+      // 将更新后的整个数组写回文件
+      // JSON.stringify 的第三个参数 2 是为了美化格式，方便手动查看
+      await Deno.writeTextFile(
+        DATA_FILE_PATH,
+        JSON.stringify(database, null, 2),
+      );
+
+      console.log(`💾 Data saved. Total entries: ${database.length}`);
+      return new Response(JSON.stringify({ success: true, entry: newEntry }), {
+        status: 201,
+      });
+    } catch (error) {
+      console.error("❌ Error adding entry:", error);
+      return new Response(
+        JSON.stringify({ error: "Failed to process request." }),
+        { status: 500 },
+      );
+    }
+  }
+
+  // 静态文件服务 (保持不变)
   return serveDir(req, {
     fsRoot: "public",
-    urlRoot: "", // 访问 http://localhost:8000/ 会直接映射到 public 目录
+    urlRoot: "",
     showDirListing: true,
     enableCors: true,
   });
-}, { port: 8000 });
+});
 
-console.log("🚀 服务已启动，请访问 http://localhost:8000");
+console.log("🚀 Server running at http://localhost:8000");

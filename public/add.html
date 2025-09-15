@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD_DATA // v1.0</title>
+    <!-- 复用主样式，并添加自己的特定样式 -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="add.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+  <body class="dark-mode">
+    <!-- 我们保留 theme-toggle 但添加一个返回链接 -->
+    <div class="top-bar">
+      <a href="/" class="nav-link">&lt; BACK_TO_SEARCH</a>
+      <button id="theme-toggle" title="切换显示模式">SYS</button>
+    </div>
+
+    <main class="content-wrapper">
+      <h1 class="page-title">// ADD NEW DATA ENTRY</h1>
+      <form id="add-form">
+        <div class="form-group">
+          <label for="name">NAME [REQUIRED]</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="url">URL [OPTIONAL]</label>
+          <input type="url" id="url" name="url">
+        </div>
+        <div class="form-group">
+          <label for="code">CODE / SNIPPET [OPTIONAL]</label>
+          <textarea id="code" name="code" rows="8"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="tags">TAGS [REQUIRED, COMMA SEPARATED]</label>
+          <input
+            type="text"
+            id="tags"
+            name="tags"
+            required
+            placeholder="e.g., git, command, cli"
+          >
+        </div>
+        <div class="form-actions">
+          <button type="submit" id="submit-btn">SAVE_ENTRY</button>
+          <p id="status-message" class="status-message"></p>
+        </div>
+      </form>
+    </main>
+
+    <script src="add.js"></script>
+  </body>
+</html>
